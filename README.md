@@ -3,7 +3,7 @@
 ## Laboratory Objectives
 1. Explore and use various tools such as: GitHub, VirtualBox, Tuffix, Linux Terminal, and Atom.
 1. Write a Python program using:
-     1. datetime built-in module
+     1. Standard modules
 1. Run and test a Python program.
 
 ## Getting Started
@@ -16,7 +16,7 @@
 
 1. Make a copy of this Github repository on your computer using the `git` and `clone` commands that you will input to the terminal. The commands take a URL as a parameter to specify where it can get a copy of the repository. You can find the URL by clicking on the green *Clone or download* button at the top right part of this page. Copy the URL and replace the example text shown below. Note that `username` should be replaced with your own Github username. When you hit <kbd>Enter</kbd> it will ask you to provide your Github username and token. Once done, you will have a copy of the repository on your computer.
     ```
-    git clone https://github.com/CSUF-CPSC223P-STMAY-2023S/lab09-username.git
+    git clone https://github.com/aadi1720/lab09-username.git
     ```
 1. Navigate into the new directory using the command line. Note that `username` should be replaced with your own Github username.  As a shortcut, you can type the first few letters of the folder name and press <kbd>Tab</kbd> so that it auto completes the folder name for you.
 
@@ -25,174 +25,82 @@
      ```
      
 ## Program Instructions
-1. Write a Python program that performs as a Tuffy Titan Flight Schedule which contains a list of flight schedule data.
-1. Create a `flights` module to meet the following requirements:
-     1. Create a file named `flights.py`.
-          1. Define a class named `Flights`.  
-               1. Define a member function named `__init__` to meet the following requirements:
-                    1. Take a self object as a positional parameter.
-                    1. Take a filename string as a positional parameter.
-                    1. Set a member variable equal to the filename.
-                    1. Set a member variable equal to an empty data list.
-                    1. Open the filename and load the JSON decoded contents to the empty data list.
-                    1. Cleanly manage the `FileNotFoundError` if the filename does not exist.
-               1. Define a member function named `add_flight` to meet the following requirements:
-                    1. Take a self object as a positional parameter.
-                    1. Take a origin string as a positional parameter.
-                    1. Take a destination string as a positional parameter.
-                    1. Take a flight number string as a positional parameter.
-                    1. Take a departure string (as HHMM) as a positional parameter.
-                    1. Take a next day string (as Y or N) as a positional parameter.
-                    1. Take a arrival string (as HHMM) as a positional parameter.
-                    2. If either the departure or arrival string is not in the proper format return a False.
-                    1. Append the data to the member variable data list.
-                    1. Write the JSON encode contents of the member variable data list to the filename that was set to the member variable.
-                    1. Return a True.
-               1. Define a member function named `get_flights` to meet the following requirements:
-                    1. Take a self object as a positional parameter.
-                    1. Return a formatted list of flight schedule data. For each element in the list, reformat the data as follows:
-                         1. origin -> (ex: 'LAX') string with no special format.
-                         2. destination -> (ex: 'ORD') string with no special format.
-                         3. flight number -> (ex: '123') string with no special format.
-                         4. departure -> (ex: '2:35pm') string as hours:minutesam. no leading zero on the hours. leading zero on the minutes. am/pm lowercase.
-                         5. arrival -> (ex: '+11:35am') string as [+]hours:minutesam. optional plus sign for flights arriving the next day. no leading zero on the hours. leading zero on the minutes. am/pm lowercase.
-                         6. duration -> (ex: '2:02') hours:minutes. no leading zero on the hours. leading zero on the minutes.
-1. Create a `main` driver program to meet the following requirements:
-     1. Create a file named `main.py`.
-     1. Import the `flights` module.
-     2. Declare a variable to hold a list of flights creating an instance object of the `Flights` class.
-     6. Implement a menu within a loop with following choices:
-          1. Add fight
-          2. Print flight schedule
-          3. Set flight schedule filename
-          9. Exit the program
-     7. Prompt the user for the menu choice.
-     8. The Add flight menu selection should prompt the user for the origin, destination, flight number, departure time (HHMM), arrival time (HHMM), and arrival the next day (Y/N). Then call the `add_flight` member function.
-     8. The Print flight schedule menu selection should call the `get_flights` member function and print a report as formatted in the below input and output.
-1. Run the program using the command below and repeat the steps above until you are satisfied your program output meets the above requirements.
 
-    ```
-    python3 main.py
-    ```
+In this lab, you will explore the usage of various Python standard modules. Please complete the following tasks:
 
+The main.py is provided and you need to make modifications in same file and submit it after changes.
 
-1. Typical input and output for the program:
-     ```
-           *** TUFFY TITAN FLIGHT SCHEDULE MAIN MENU
+**Task 1: Operating System (os)**
+Write a Python program that uses the os module to list all files in a specific directory and display their names.
 
-     1. Add flight
-     2. Print flight schedule
-     3. Set flight schedule filename
-     9. Exit the program
+**Task 2: Regular Expressions (re)**
+Write a Python program that uses the re module to search for and extract email addresses from a given text.
 
-     Enter menu choice: 1
+**Task 3: Mathematics (math)**
+Write a Python program that calculates the square root of a user-inputted number using the math module.
 
-     Enter origin: LAX
-     Enter destination: ORD
-     Enter flight number: 545
-     Enter departure time (HHMM): 1230
-     Enter arrival time (HHMM): 1640
-     Is arrival next day (Y/N): N
+**Task 4: Random Numbers (random)**
+Write a Python program that generates and prints a random integer between a specified range using the random module.
 
-           *** TUFFY TITAN FLIGHT SCHEDULE MAIN MENU
+**Task 5: Statistics (statistics)**
+Write a Python program that computes the mean and standard deviation of a list of numbers using the statistics module.
 
-     1. Add flight
-     2. Print flight schedule
-     3. Set flight schedule filename
-     9. Exit the program
+**Task 6: Date and Time (datetime)**
+Write a Python program that prints the current date and time using the datetime module.
 
-     Enter menu choice: 1
+**Task 7: Performance Timing (timeit)**
+Write a Python program that measures the time it takes to execute a simple function using the timeit module.
 
-     Enter origin: ORD
-     Enter destination: CLE
-     Enter flight number: 409
-     Enter departure time (HHMM): 1733
-     Enter arrival time (HHMM): 1857
-     Is arrival next day (Y/N): N
+**Task 8: Reprlib (reprlib)**
+Write a Python program that demonstrates the use of reprlib to create a concise representation of a long string.
 
-           *** TUFFY TITAN FLIGHT SCHEDULE MAIN MENU
+**Task 9: Pretty Printing (pprint)**
+Write a Python program that uses the pprint module to pretty-print a nested dictionary.
 
-     1. Add flight
-     2. Print flight schedule
-     3. Set flight schedule filename
-     9. Exit the program
+**Task 10: Text Wrapping (textwrap)**
+Write a Python program that uses the textwrap module to format a long text paragraph into multiple lines with a specified line width.
 
-     Enter menu choice: 1
+**Task 11: Template Strings (string.Template)**
+Write a Python program that uses the string.Template class to generate dynamic SQL queries with placeholders.
 
-     Enter origin: CLE
-     Enter destination: IAD
-     Enter flight number: 83
-     Enter departure time (HHMM): 1953
-     Enter arrival time (HHMM): 2119
-     Is arrival next day (Y/N): N
+**Task 12: Logging (logging)**
+Write a Python program that sets up logging to record events to a log file using the logging module.
 
-           *** TUFFY TITAN FLIGHT SCHEDULE MAIN MENU
+**Task 13: Heap Queue (heapq)**
+Write a Python program that uses the heapq module to perform heap operations on a list of integers.
 
-     1. Add flight
-     2. Print flight schedule
-     3. Set flight schedule filename
-     9. Exit the program
+**Expected Output (Output values could be different, however, output format should be same as given)**
 
-     Enter menu choice: 1
-
-     Enter origin: IAD
-     Enter destination: LHR
-     Enter flight number: 1
-     Enter departure time (HHMM): 2200
-     Enter arrival time (HHMM): 0530
-     Is arrival next day (Y/N): Y
-
-           *** TUFFY TITAN FLIGHT SCHEDULE MAIN MENU
-
-     1. Add flight
-     2. Print flight schedule
-     3. Set flight schedule filename
-     9. Exit the program
-
-     Enter menu choice: 1
-
-     Enter origin: LHR
-     Enter destination: LAX
-     Enter flight number: 2222
-     Enter departure time (HHMM): 2355
-     Enter arrival time (HHMM): 2201
-     Is arrival next day (Y/N): Y
-
-           *** TUFFY TITAN FLIGHT SCHEDULE MAIN MENU
-
-     1. Add flight
-     2. Print flight schedule
-     3. Set flight schedule filename
-     9. Exit the program
-
-     Enter menu choice: 2
-
-     ================== FLIGHT SCHEDULE ==================
-     Origin Destination Number Departure  Arrival Duration
-     ====== =========== ====== ========= ======== ========
-     LAX    ORD            545   12:30pm   4:40pm     4:10
-     ORD    CLE            409    5:33pm   6:57pm     1:24
-     CLE    IAD             83    7:53pm   9:19pm     1:26
-     IAD    LHR              1   10:00pm  +5:30am     7:30
-     LHR    LAX           2222   11:55pm +10:01pm    22:06
-
-           *** TUFFY TITAN FLIGHT SCHEDULE MAIN MENU
-
-     1. Add flight
-     2. Print flight schedule
-     3. Set flight schedule filename
-     9. Exit the program
-
-     Enter menu choice: 9
-     ```
-
-1. Run the unit testing program to ensure that your program runs as expected.
-
-    ```
-    ./test.sh
-    ```
-       
-    The unit testing will output the results of a series of tests using specific input and expected output.  Any error will provide information on where the expected output is different from the actual output.  You will need to edit your source code to fix the error and run `./test.sh` repeatedly until it passes all the test.
+```
+.\app.log
+.\sample.py
+.\LabFolder\data.txt   
+.\LabFolder\lab_log.txt
+.\__pycache__\bank_exceptions.cpython-311.pyc
+.\__pycache__\first_module.cpython-311.pyc
+.\__pycache__\mymodule.cpython-311.pyc
+.\__pycache__\sample.cpython-311.pyc
+.\__pycache__\second_module.cpython-311.pyc
+.\__pycache__\test.cpython-311.pyc
+abc@example.com
+xyz@domain.com
+Square root of 16 is 4.0
+Random integer between 1 and 100: 92
+Mean: 6, Standard Deviation: 3.1622776601683795
+Current Date and Time: 2023-11-08 00:06:33.345713
+Time taken to execute the function 10000 times: 0.0011316000018268824 seconds
+Truncated String: 'This is a ve...be truncated.'
+{'age': 30,
+ 'city': 'New York',
+ 'name': 'John'}
+This is a long paragraph that
+needs to be wrapped to
+multiple lines for better
+readability.
+Generated SQL Query: SELECT id, name, email FROM users
+Heapified List: [1, 1, 4, 3, 5, 9]
+Smallest Element: 1
+```
 
 ## Submission
 Periodically throughout the exercise, and when you have completed the exercise, **submit the complete repository to Github**.
@@ -206,8 +114,7 @@ In case it asks you  to configure global variables for an email and name, just c
 When you completed the final Github push, go back into github.com through the browser interface and ensure all your files have been correctly updated.  You should have the following files:
 ```
 main.py
-flights.py
-test.txt
+output screenshot
 ```
     
 ## Grading
@@ -216,7 +123,6 @@ test.txt
 | Points | Description |
 | --- | --- |
 |50|initial git clone of this repository to your Tuffix machine|
-|15|main.py file submitted contains the main driver program and meets the program requirements|
-|15|flights.py file submitted contains the flights module and meets the program requirements|
-|10|unit testing test.txt file results submitted|
-|10|unit testing passes each test|
+|30|main.py file submitted contains the main driver program and meets the program requirements|
+|20|if output is similar to the expected output given in readme.md file|
+
