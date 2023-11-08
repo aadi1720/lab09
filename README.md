@@ -28,7 +28,7 @@
 
 In this lab, you will explore the usage of various Python standard modules. Please complete the following tasks:
 
-The main.py is provided and you need to make modifications in same file and submit it after changes.
+The main.py file is already provided and you need to make modifications in same file as per the exercise and submit it after implementing your changes.
 
 **Task 1: Operating System (os)**
 Write a Python program that uses the os module to list all files in a specific directory and display their names.
