@@ -31,42 +31,55 @@ In this lab, you will explore the usage of various Python standard modules. Plea
 The main.py is provided and you need to make modifications in same file and submit it after changes.
 
 **Task 1: Operating System (os)**
+
 Write a Python program that uses the os module to list all files in a specific directory and display their names.
 
 **Task 2: Regular Expressions (re)**
+
 Write a Python program that uses the re module to search for and extract email addresses from a given text.
 
 **Task 3: Mathematics (math)**
+
 Write a Python program that calculates the square root of a user-inputted number using the math module.
 
 **Task 4: Random Numbers (random)**
+
 Write a Python program that generates and prints a random integer between a specified range using the random module.
 
 **Task 5: Statistics (statistics)**
+
 Write a Python program that computes the mean and standard deviation of a list of numbers using the statistics module.
 
 **Task 6: Date and Time (datetime)**
+
 Write a Python program that prints the current date and time using the datetime module.
 
 **Task 7: Performance Timing (timeit)**
+
 Write a Python program that measures the time it takes to execute a simple function using the timeit module.
 
 **Task 8: Reprlib (reprlib)**
+
 Write a Python program that demonstrates the use of reprlib to create a concise representation of a long string.
 
 **Task 9: Pretty Printing (pprint)**
+
 Write a Python program that uses the pprint module to pretty-print a nested dictionary.
 
 **Task 10: Text Wrapping (textwrap)**
+
 Write a Python program that uses the textwrap module to format a long text paragraph into multiple lines with a specified line width.
 
 **Task 11: Template Strings (string.Template)**
+
 Write a Python program that uses the string.Template class to generate dynamic SQL queries with placeholders.
 
 **Task 12: Logging (logging)**
+
 Write a Python program that sets up logging to record events to a log file using the logging module.
 
 **Task 13: Heap Queue (heapq)**
+
 Write a Python program that uses the heapq module to perform heap operations on a list of integers.
 
 **Expected Output (Output values could be different, however, output format should be same as given)**
